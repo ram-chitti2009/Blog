@@ -3,21 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "json-server": "json-server --watch ./src/app/db.json --port 8080"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^15.1.8",
+    "@types/mdx": "^2.0.13",
+    "next": "15.3.2",
+    "next-mdx-remote": "^5.0.0",
     "react": "^19.0.0",
+    "react-cookie": "^8.0.1",
     "react-dom": "^19.0.0",
-    "next": "15.3.2"
+    "react-error-boundary": "^6.0.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
+    "@eslint/eslintrc": "^3.0.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
     "eslint-config-next": "15.3.2",
-    "@eslint/eslintrc": "^3"
+    "json-server": "^0.17.4",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
   }
 }
